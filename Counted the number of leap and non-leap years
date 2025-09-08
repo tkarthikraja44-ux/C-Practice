@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int year=0;
+    cin >> year;
+    if(year%4==0&&year%100!=0 || year%400==0)
+    {
+        cout << "Yes Is Leap Year";
+    }
+    int years = year;
+    int count =0;
+    int leap =0;
+    int notleap =0;
+    while(count<10)
+    {
+        count++;
+        years++;
+        if(years%4==0&&years%100!=0 || years%400==0)
+        {
+            leap++;
+        }
+        else notleap++;
+    }
+    cout << endl <<"Leap Years "<<leap;
+    cout << endl<<"Not Leap years "<<notleap;
+}
