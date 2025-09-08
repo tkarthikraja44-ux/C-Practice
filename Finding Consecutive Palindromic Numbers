@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num=0;
+    cin >> num;
+    int count=0;
+    while(count<5) 
+    {
+        num++;
+        int rev=0;
+        int temp = num;
+
+        while(temp>0)  
+        {
+            rev = rev*10 + temp%10;
+            temp /= 10;
+        }
+
+        if(num == rev)  
+        {
+            cout <<num<<" ";
+            count++;
+        }
+    }
+}
