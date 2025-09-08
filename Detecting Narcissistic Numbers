@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+#include<cmath>
+int main()
+{
+    int num=0;
+    cin >> num;
+     int og = num;
+    int temp=num;
+    int count=0;
+    while(temp>0)
+    {
+        count++;
+        temp/=10;
+    }
+    int sum=0;
+    while(num>0)
+    {
+        int digit=0;
+        digit = num%10;
+        sum += pow(digit, count);
+        num/=10;
+    }
+    if(sum==og)cout<<sum<<" is a narcissistic number";
+    else cout<<sum<< "is Not narcissistic number";
+    
+    
+    
+}
