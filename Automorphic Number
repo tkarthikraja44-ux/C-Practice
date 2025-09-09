@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int num=0;
+    cin >> num;
+    int power = pow(num,2);
+    int count =0;
+    while(num>0)
+    {
+        if(num%10!=power%10)
+        {
+            cout <<"NOT";
+            return 0;
+        }
+        num/=10;
+        power/=10;
+    }
+    cout << "Yes";
+    
+    
+    
+    
+    
+}
