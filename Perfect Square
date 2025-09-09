@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int  main()
+{
+    float num = 0.0;
+    cin >> num;
+    int n=num;
+    for(int i=1;i<=num;i++)
+    {
+        if(i*i==n)
+        {
+            cout <<"perfect number";
+            return 0;
+        }
+    }
+    cout << "NOT";
+}
